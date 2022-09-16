@@ -38,15 +38,18 @@ main.style.justifyContent = "space-between";
 main.style.gap = "3rem";
 
 //category
-category.forEach((el) => (el.style.fontSize = "4rem"));
-category.forEach((el) => (el.style.borderBottom = "1px solid"));
-category.forEach((el) => (el.style.display = "block"));
-category.forEach((el) => (el.style.marginBottom = "3rem"));
+category.forEach((el) => {
+  el.style.fontSize = "4rem";
+  el.style.borderBottom = "1px solid";
+  el.style.display = "block";
+  el.style.marginBottom = "3rem";
+});
 
 //food item
-foodItem.forEach((el) => (el.style.fontSize = "2.8rem"));
-foodItem.forEach((el) => (el.style.marginBottom = "1.8rem"));
-
+foodItem.forEach((el) => {
+  el.style.fontSize = "2.8rem";
+  el.style.marginBottom = "1.8rem";
+});
 // allery warning section
 allergyWarning.style.marginBottom = "10rem";
 
@@ -100,9 +103,10 @@ const colorGenerator = () => {
   return `rgba(${r1}, ${r2}, ${r3}, ${r4})`;
 };
 
-foodCategory.forEach((el) => (el.style.backgroundColor = colorGenerator()));
-foodCategory.forEach((el) => (el.style.padding = "7rem"));
-
+foodCategory.forEach((el) => {
+  el.style.backgroundColor = colorGenerator();
+  el.style.padding = "7rem";
+});
 // media query
 
 const mediaQuery = window.matchMedia("(max-width: 1000px)");
