@@ -87,21 +87,12 @@ footerDesc.forEach((el) => (el.style.border = "10px solid blue"));
 // color generator
 
 const colorGenerator = () => {
-  const random = Math.floor(Math.random() * 10);
-  const arr = [
-    "rgb(0,0,128,0.3)",
-    "rgb(0,0,255, 0.3)",
-    "rgb(0,128,0, 0.3)",
-    "rgb(0,255,255, 0.3)",
-    "rgb(128,0,128, 0.3)",
-    "rgb(128,128,0, 0.3)",
-    "rgb(255,0,255, 0.3)",
-    "rgb(255,255,0, 0.3)",
-    "rgb(0,128,128, 0.3)",
-    "rgb(0,255,0, 0.3)",
-  ];
+  const r1 = Math.ceil(Math.random() * 255);
+  const r2 = Math.ceil(Math.random() * 255);
+  const r3 = Math.ceil(Math.random() * 255);
+  const r4 = Math.random().toFixed(1);
 
-  return arr[random];
+  return `rgba(${r1}, ${r2}, ${r3}, ${r4})`;
 };
 
 foodCategory.forEach((el) => (el.style.backgroundColor = colorGenerator()));
