@@ -61,13 +61,16 @@ allergieContainer.style.display = "grid";
 allergieContainer.style.placeItems = "center";
 
 // allergy info
-allergyInfo.forEach((el) => (el.style.marginBottom = "4rem"));
-allergyInfo.forEach((el) => (el.style.width = "50%"));
+allergyInfo.forEach((el) => {
+  el.style.marginBottom = "4rem";
+  el.style.width = "50%";
+});
 
 //allergy info even
-allergyInfoEven.forEach((el) => (el.style.backgroundColor = "cyan"));
-allergyInfo.forEach((el) => (el.style.marginBottom = "2rem"));
-
+allergyInfoEven.forEach((el) => {
+  el.style.backgroundColor = "cyan";
+  el.style.marginBottom = "2rem";
+});
 // footer
 footer.style.display = "flex";
 footer.style.justifyContent = "center";
@@ -76,13 +79,15 @@ footer.style.gap = "5rem";
 footer.style.marginBottom = "15rem";
 
 // footer description
-footerDesc.forEach((el) => (el.style.display = "grid"));
-footerDesc.forEach((el) => (el.style.placeItems = "center"));
-footerDesc.forEach((el) => (el.style.fontSize = "3rem"));
-footerDesc.forEach((el) => (el.style.borderRadius = "50%"));
-footerDesc.forEach((el) => (el.style.width = "20rem"));
-footerDesc.forEach((el) => (el.style.height = "20rem"));
-footerDesc.forEach((el) => (el.style.border = "10px solid blue"));
+footerDesc.forEach((el) => {
+  el.style.display = "grid";
+  el.style.placeItems = "center";
+  el.style.fontSize = "3rem";
+  el.style.borderRadius = "50%";
+  el.style.width = "20rem";
+  el.style.height = "20rem";
+  el.style.border = "10px solid blue";
+});
 
 // color generator
 
